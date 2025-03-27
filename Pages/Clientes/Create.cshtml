@@ -1,0 +1,46 @@
+@page
+@model ProjetoCRUD.Pages_Clientes.CreateModel
+
+        @{
+        ViewData["Title"] = "Create";
+        }
+        
+        <h1>Create</h1>
+        
+    <h4>Clientes</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Clientes.Nome" class="control-label"></label>
+                <input asp-for="Clientes.Nome" class="form-control" />
+                <span asp-validation-for="Clientes.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Clientes.Endereco" class="control-label"></label>
+                <input asp-for="Clientes.Endereco" class="form-control" />
+                <span asp-validation-for="Clientes.Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Clientes.Telefone" class="control-label"></label>
+                <input asp-for="Clientes.Telefone" class="form-control" />
+                <span asp-validation-for="Clientes.Telefone" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-page="./Index" class="btn btn-secondary" data-toggle="modal"><i class="bi bi-book-fill"></i> <span>Back to List</span></a>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    
+</div>
+
